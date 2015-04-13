@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta  name="viewport" content="width=device-width">
+<title>View port</title>
+<style>
+@media screen and (min-width: 960px) {
+  body { background-color: green; }
+}
+
+@media screen and (max-width: 960px) and (min-width: 500px) {
+  body { background-color: pink; }
+}
+
+@media screen and (max-width: 500px) {
+  body { background-color: yellow; }
+}
+</style>
+</head>
+
+<body>
+Viewpoint Control Test 
+<div id="large">Minimum screen width 960px</div>
+<div id="middle">Screen width between 500px and 960 px</div>
+<div id="small">Maximum screen width  500px</div>
+</body>
+
+</html>
