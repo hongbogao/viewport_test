@@ -6,22 +6,29 @@
 <title>View port</title>
 <style>
 @media screen and (min-width: 960px) {
+@media screen and (min-width: 960px) {
   body { background-color: green; }
+  #medium {display:none; }
+  #small{display:none; }
 }
 
 @media screen and (max-width: 960px) and (min-width: 500px) {
   body { background-color: pink; }
+  #large{display:none; }
+  #small{display:none; }
 }
 
 @media screen and (max-width: 500px) {
   body { background-color: yellow; }
+  #large{display:none; }
+  #medium{display:none; }
 }
 </style>
 </head>
 <body>
 Viewpoint Control Test 
 <div id="large">Minimum screen width 960px</div>
-<div id="middle">Screen width between 500px and 960 px</div>
+<div id="medium">Screen width between 500px and 960 px</div>
 <div id="small">Maximum screen width  500px</div>
 </body>
 
